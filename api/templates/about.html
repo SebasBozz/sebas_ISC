@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -21,14 +22,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Dosis:500|Raleway:400,600,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="{% static 'css/style.css'%}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="{% static 'css/responsive.css'%}" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -39,7 +40,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a href="index.html" class="navbar-brand">
-            <img src="images/logo-black.png" alt="">
+            <img src="{% static 'images/logo-black.png'%}" alt="">
           </a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,16 +50,16 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <a class="nav-link" href="{% url 'about'%}"> About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio </a>
+                  <a class="nav-link" href="{% url 'portafolio'%}">Portfolio </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="{% url 'contact'%}">Contact us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Login</a>
@@ -82,10 +83,10 @@
       <div class="box">
         <div class="img_container">
           <div class="img-box b1">
-            <img src="images/a-1.jpg" alt="">
+            <img src="{% static 'images/a-1.jpg'%}" alt="">
           </div>
           <div class="img-box b2">
-            <img src="images/a-2.jpg" alt="">
+            <img src="{% static 'images/a-2.jpg'%}" alt="">
           </div>
         </div>
         <div class="detail-box">
@@ -113,7 +114,7 @@
         <div class="col-md-3">
           <div class="info-logo">
             <a href="">
-              <img src="images/info-logo.png" alt="">
+              <img src="{% static 'images/info-logo.png'%}" alt="">
             </a>
             <p>
               It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -128,22 +129,22 @@
             </h4>
             <ul>
               <li>
-                <a href="index.html">
+                <a href="{% url 'home' %}">
                   Home
                 </a>
               </li>
               <li class="active">
-                <a href="about.html">
+                <a href="{% url 'about'%}">
                   About
                 </a>
               </li>
               <li>
-                <a href="portfolio.html">
+                <a href="{% url 'portafolio'%}">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a href="contact.html">
+                <a href="{% url 'contact'%}">
                   Contact Us
                 </a>
               </li>
@@ -165,7 +166,7 @@
                 Mantain Office Address:
               </h6>
               <a href="">
-                <img src="images/location.png" alt="">
+                <img src="{% static 'images/location.png'%}" alt="">
                 <span>
                   Loram ipusm New York, NY 36524
                 </span>
@@ -176,7 +177,7 @@
                 Customer Service:
               </h6>
               <a href="">
-                <img src="images/call.png" alt="">
+                <img src="{% static 'images/call.png'%}" alt="">
                 <span>
                   ( +01 1234567890 )
                 </span>
@@ -184,7 +185,7 @@
             </div>
             <div class="call">
               <a href="">
-                <img src="images/mail.png" alt="">
+                <img src="{% static 'images/mail.png'%}" alt="">
                 <span>
                   demo@gmail.com
                 </span>
@@ -222,16 +223,16 @@
             </ul>
             <div class="social-box">
               <a href="">
-                <img src="images/fb.png" alt="">
+                <img src="{% static 'images/fb.png'%}" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="{% static 'images/twitter.png'%}" alt="">
               </a>
               <a href="">
-                <img src="images/insta.png" alt="">
+                <img src="{% static 'images/insta.png'%}" alt="">
               </a>
               <a href="">
-                <img src="images/linkedin.png" alt="">
+                <img src="{% static 'images/linkedin.png'%}" alt="">
               </a>
             </div>
           </div>
@@ -269,8 +270,8 @@
   </section>
   <!-- footer section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
   <!-- end google map js -->
 

@@ -76,3 +76,19 @@ def forgot_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
+
+#portafolio de home
+def portafolio_view(request):
+    template_name = "portfolio.html"
+    return render(request, template_name)
+
+#contact de home
+def contact_view(request):
+    template_name = "contact.html"
+    return render(request, template_name)
+
+#about de home
+def about_view(request):
+    template_name = "about.html"
+    return render(request, template_name)
+
